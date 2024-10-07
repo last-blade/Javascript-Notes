@@ -1,0 +1,16 @@
+-->In simple terms, an API (Application Programming Interface) is like a waiter at a restaurant. Imagine you're at a
+restaurant and you want to order food. You don't go into the kitchen and cook it yourself; instead, you tell the waiter
+what you want, and they bring it to you.
+
+
+-->Similarly, in computing, an API is like a waiter that helps different software programs communicate with each other. It
+defines a set of rules and protocols that allow one piece of software to interact with another. Just like you tell the
+waiter what you want to eat and how you want it prepared, you use an API to tell a program what you want it to do and 
+how you want it to do it.
+
+-->For example, when you use a weather app on your phone, it's likely getting its weather data from a weather API. The
+app sends a request to the API, asking for the weather forecast for a specific location, and the API responds with 
+the requested information, which the app then displays to you.
+
+-->So, an API essentially acts as an intermediary that allows different software programs to talk to each other and share 
+information or perform tasks without needing to know how each other works internally.

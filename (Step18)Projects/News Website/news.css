@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&family=Martian+Mono:wght@200&family=Nunito+Sans:opsz,wght@6..12,300&family=Pacifico&family=Satisfy&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3; 
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-text-color);
+} 
+
+p{
+    font-family: "Roboto", sans-serif;
+    color: var(--secondary-text-color);
+    line-height: 1.4rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.navBar{
+    display: flex;
+    margin-inline: auto;
+    max-width: 1180px;
+    overflow: hidden;
+    align-items: center;
+    /* border: 1px solid red; */
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 2px 0px;
+}
+
+.newsLogo{
+    height: 50px;
+    width: 100px;
+}
+.list{
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-around; */
+    gap: 60px;
+    font-weight: bold;
+}
+
+.nav-links{
+    width: 100vw;
+}
+
+.news-input{
+    /* position: relative; */
+    margin-right: 20px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    border-left:3px solid rebeccapurple;
+    outline: none;
+    border-bottom: 3px solid rebeccapurple;
+    padding: 15px;
+
+}
+
+.search-button{
+    height: 35px;
+    margin-right: 6px;
+    width: 80px;
+    border: none;
+    outline: none;
+    background-color: rgb(177, 149, 204);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.search-button:hover{
+    background-color: rgb(154, 130, 178);
+    cursor: pointer;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.search-button:active{
+    background-color: rgb(117, 77, 159);
+
+}
+
+.color:active{
+    color: rgb(169, 96, 241);
+    
+}
+
+.news-input:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.cards-container{
+    /* border: 1px solid red; */
+    height: 420px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    overflow: hidden;
+}
+
+.newsImg{
+    width: 100%;
+    object-fit: cover;
+    height: 180px;
+}
+
+.content{
+    max-width: 1180px;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    /* margin-inline: 20px; */
+    flex-wrap: wrap;
+    /* margin-block: 100px; */
+    gap: 50px;
+    cursor: pointer;
+}
+
+.cardContent{
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cards-container:hover{
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.allCards{
+    max-width: 1180px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#news-Image{
+    height: 200px;
+    width: 350px;
+}
+
+.color:hover{
+    color: rgb(165, 117, 212);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+.IPL{
+    color: rgb(171, 143, 197);
+    
+}
+
+#errorMessage{
+    display: none;
+}
+
+body::-webkit-scrollbar{
+    background-color:transparent;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(162, 128, 198);
+    border-radius: 10px;
+}
+
+.menuIcon{
+    display: none;
+}
+
+@media(max-width:1024px){
+    .list{
+        display: none;
+    }
+}
+
+@media (max-width:1024px){
+    .menuIcon{
+        margin-right: 30px;
+        display: block;
+    }
+}
+
+@media (max-width){
+    .search-button{
+        margin-right: 200px;
+    }
+}
+
+
+.searchBar{
+    display: flex;
+}
+
+@media(max-width:1024px){
+    .searchBar{
+        /* padding: 20px; */
+        /* margin-right: 100px; */
+        position: relative;
+        right: 50px;
+    }
+}
+
+@media(max-width:559px){
+    .searchBar{
+        /* padding: 20px; */
+        /* margin-right: 100px; */
+        position: relative;
+        /* height: 10px; */
+        right: 8px;
+    }
+}
+
+
+@media(max-width:559px){
+    .search-button{
+        width: 60px;
+    }
+}
+
+@media(max-width:559px){
+    .news-input{
+        width: 150px;
+    }
+}
+
+@media (max-width:559px){
+    .menuIcon{
+        position: relative;
+        margin-right: 30px;
+    }
+}
+
+@media(max-width:407px){
+    .news-input{
+        width: 120px;
+        /* margin-right: 10px; */
+    }
+}
+
+@media(max-width:407px){
+    .search-button{
+        width: 50px;
+    }
+}
+
+/* ---------------------------------------------------------------- */
+
+
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+</head>
+<body style="background-color: rgb(29, 27, 27);">
+
+    <form id="myForm">
+        <input type="text" id="username" placeholder="Username" style="height: 30px;"> <br> <br>
+        <input type="password" id="password" placeholder="Password" style="height: 30px;"> <br> <br>
+        <button type="submit" style="height: 30px;">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Perform validation
+            if (username === '' || password === '') {
+                alert('Please fill in all fields.');
+                event.preventDefault(); // Prevent form submission
+            } else {
+                // Form is valid, submit it
+                // This is where you might make an AJAX request or perform other actions
+            }
+        });
+    </script>
+
+</body>
+</html>
+
+
+<!-- 
+In this example, when the form is submitted, the event listener function checks if the username and password fields are
+empty. If either of them is empty, it displays an alert and calls event.preventDefault() to prevent the form from being
+submitted to the server. If both fields are filled, the form is submitted as usual.
+
+This way, preventDefault() helps in controlling the behavior of the form based on certain conditions, improving user
+experience and ensuring data integrity.
+ -->

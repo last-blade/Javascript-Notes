@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <link rel="stylesheet" href="dictionary.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@700&family=Martian+Mono:wght@200&family=Nunito+Sans:opsz,wght@6..12,300&family=Pacifico&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dictionary">
+        <h1>any word means....AnyWord!...hahaha!🤣</h1>
+    </div>
+    <audio id="sound"></audio>
+    <div class="wrapper">
+        <div class="container">
+            <div class="search-box">
+                <input type="text" placeholder="Search for a word..." id="inp-word">
+                <button id="search-btn">Search</button>
+            </div>
+            
+            <div class="result" id="result">
+                <div class="word"> 
+                    <h3 id="myWord"></h3>
+                    <button id="sound-btn">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                </div>
+                <div class="details">
+                    <p></p>
+                    <p></p>
+                    
+                </div>
+                <p class="word-meaning">
+                    <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, harum! -->
+                </p>
+                <span id="synonym">Synonyms:<span id="synonym"></span></span><span id="synonym2"></span> <br>
+                <!-- <span>Antonyms:<span id="antonym"></span></span> -->
+    
+                <p class="word-example">
+                    <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, amet!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, tenetur? -->
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="dictionary.js"></script>
+</body>
+</html>

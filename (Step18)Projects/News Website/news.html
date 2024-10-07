@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+    
+    <nav class="navBar">
+        <a href="">
+            <img src="News logo2.jpg.png" class="newsLogo">
+        </a>
+        
+        
+        <div class="nav-links">
+
+            <ul class="list" >
+                <li style= "cursor: pointer;" class="color IPL">IPL</li>
+                <li style="cursor: pointer;" class="color finance">Finance</li>
+                <li style="cursor: pointer;" class="color politics">Politics</li>
+                <li style="cursor: pointer;" class="color technology">Technology</li>
+            </ul>
+        </div>
+        <div class="searchBar">
+            <input type="text" class="news-input" placeholder="e.g. Science">
+            <button class="search-button">Search</button>
+        </div>
+        <div class="menuIcon">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAGZJREFUSEvtlrENACAMw8pnnMZpfAYTC1W3CDOEA2JhUpUW0GkQNwx+Zt6qj+ohdp7yKtVLDE6c78DiC+c4t/o46WLX8877rlzYOGGqxU/scYryB4KVCwNja9GtlhvwWpQrrQIx1Rt3TwofeC3yFwAAAABJRU5ErkJggg=="/>
+        </div>
+    </nav>
+    <span id="errorMessage" style="margin-left: 600px; color: red; font-weight: bold;"></span>
+    <main">
+        
+        <div class="allCards" id="allCards">
+            
+        </div>
+    </main>
+    <span>.</span>
+    <template id="templateOfCard">
+        <main class="content">
+            <div class="cards-container">
+                <div class="newsImg">
+                    <img src="" alt="" id="news-Image">
+                </div>
+                <div class="cardContent">
+                    <h2 style="margin-top: 10px;" id="news-Title">Title</h2>
+                    <div class="date" id="news-Source">
+                        11 August 2023 Friday!
+                    </div>
+                    <div class="description" id="news-Description">
+                        <p style="overflow: hidden;">
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </template>
+
+    <script src="news.js"></script>
+</body>
+</html>

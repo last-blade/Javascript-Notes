@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#main>h1{
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+}
+
+#arrowSpan{
+    display: flex;
+    align-items: center;
+}
+
+#main>h1 span{
+    /* margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 15px;
+    margin-right: 15px; */
+    /* Shorthand notation */
+    margin: 0 15px; /* First-value: top & bottom, Second-value: left & right*/
+    /* display: flex;
+    align-items: center; */
+}
+
+#main>h1 span img{
+    transition: 0.3s ease;
+}
+
+#main> #endec-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222;
+    padding: 8px;
+    width: 28%;
+    margin: 35px 0;
+    border-radius: 10px;
+}
+
+#main> #endec-div h3{
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 12px 12px;
+    transform: 0.2s ease;
+}
+
+#enc-btn{
+    background-color: #333;
+    /* margin: 0 5px; */
+}
+
+#endec-div h3 span{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#endec-div h3 span img{
+    height: 22px;
+}
+/* #encryption Div below ------------------------------------------------------------------------------------*/
+#encryption{
+    width: 45%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    flex-direction: column;
+    /* display: none; */
+}
+
+#encryption h5{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 13px;
+    color: #7E7E6C;
+}
+
+#encryption textarea{
+    width: 100%;
+    height: 70px;
+    border: 1px solid #343434;
+    margin-bottom: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 17px;
+    outline: none;
+    background-color: #1C1C1C;
+}
+
+#encryption input{
+    width: 100%;
+    /* height: 70px; */
+    border: 1px solid #343434;
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    font-size: 17px;
+    outline: none;
+    background-color: #1C1C1C;
+}
+
+#encryption button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6e6e6e;
+    background-color: #212121;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    color: #eee;
+    font-size: 17px;
+    cursor: pointer;
+
+}
+
+#encryption button:hover{
+    background-color: #1F1F1F;
+}
+
+button span{
+    display: flex;
+    margin-right: 10px;
+}
+
+button img{
+    height: 20px;
+
+}
+
+
+
+
+/* #decryption Div below ------------------------------------------------------------------------------------*/
+
+
+
+#decryption{
+    width: 45%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    flex-direction: column;
+    display: none;
+}
+
+#decryption h5{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 13px;
+    color: #7E7E6C;
+}
+
+#decryption textarea{
+    width: 100%;
+    height: 70px;
+    border: 1px solid #343434;
+    margin-bottom: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 17px;
+    outline: none;
+    background-color: #1C1C1C;
+}
+
+#decryption input{
+    width: 100%;
+    /* height: 70px; */
+    border: 1px solid #343434;
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    font-size: 17px;
+    outline: none;
+    background-color: #1C1C1C;
+}
+
+#decryption button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6e6e6e;
+    background-color: #212121;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    color: #eee;
+    font-size: 17px;
+    cursor: pointer;
+
+}
+
+#decryption button:hover{
+    background-color: #1F1F1F;
+}
+
+button span{
+    display: flex;
+    margin-right: 10px;
+}
+
+button img{
+    height: 20px;
+
+}
+
+
+
+
+
+
+
+
+#result{
+    width: 45%;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    flex-direction: column;
+    /* display: none; */
+    margin-top: 50px;
+    background-color: #222222;
+    border-radius: 10px;
+    border: none;
+    display: none;
+    resize: none;
+
+}
+
+#wrongResult{
+    width: 45%;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    flex-direction: column;
+    /* display: none; */
+    margin-top: 50px;
+    background-color: #222222;
+    border-radius: 10px;
+    border: none;
+    display: none;
+    resize: none;
+    color: red;
+}
+ #copyButton{
+    color: black;
+    height: 30px;
+    width: 50px;
+    border-radius: 5px;
+    border: none;
+}
+
+.copyButton{
+    margin-top: 20px;
+    display: none;
+}
+
+
