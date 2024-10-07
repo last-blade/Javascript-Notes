@@ -52,7 +52,3 @@ Explore modern JavaScript features introduced in ES6 and beyond, such as templat
 - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [JavaScript.info](https://javascript.info/)
 - [W3Schools JavaScript Tutorial](https://www.w3schools.com/js/)
-
----
-
-Feel free to contribute by adding more JavaScript concepts or improving the existing notes!
